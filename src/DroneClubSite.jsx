@@ -656,7 +656,7 @@ function HomePage({setPage}) {
       <div style={{position:"absolute",left:0,top:0,bottom:0,width:"clamp(280px,50%,600px)",display:"flex",flexDirection:"column",justifyContent:"center",padding:"0 clamp(20px,4vw,56px)"}}>
         <div style={{...fade(0.1),fontSize:"clamp(7px,1vw,11px)",letterSpacing:"clamp(2px,0.5vw,5px)",color:"#00e5ff",textTransform:"uppercase",marginBottom:"clamp(8px,1.5vh,18px)"}}>Saint Leo University Drone Club<br/>✦ Est. 2026</div>
         <h1 style={{...fade(0.2),fontFamily:"monospace",fontWeight:900,fontSize:"clamp(26px,5vw,72px)",lineHeight:1.05,color:"#fff",marginBottom:"clamp(12px,2vh,22px)",letterSpacing:-1}}>
-          Master The<br/><span style={{color:"#00e5ff",textShadow:"0 0 40px #00e5ff88"}}>Sky.</span>
+          Master The<br/><span style={{color:"#00e5ff",textShadow:"0 0 40px #00e5ff88"}}>Sky</span>
         </h1>
         <p style={{...fade(0.3),color:"#667788",fontSize:"clamp(11px,1.3vw,16px)",lineHeight:1.8,marginBottom:"clamp(20px,3vh,38px)",maxWidth:"clamp(240px,32vw,420px)"}}>
           From first hover to racing through gates at 120 km/h — SLU Drone Club is where university pilots level up, compete, and build real-world skills.
