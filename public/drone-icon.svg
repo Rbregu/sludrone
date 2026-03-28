@@ -9,10 +9,3 @@
   <circle cx="15" cy="80" r="8" fill="#00e5ff"/>
   <circle cx="85" cy="80" r="8" fill="#00e5ff"/>
 </svg>
-```
-
-Then:
-```
-git add .
-git commit -m "update title and favicon"
-git push
