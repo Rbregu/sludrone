@@ -661,7 +661,7 @@ function HomePage({setPage}) {
           Master The<br/><span style={{color:"#00e5ff",textShadow:"0 0 40px #00e5ff88"}}>Sky</span>
         </h1>
         <p style={{...fade(0.3),color:"#667788",fontSize:"clamp(11px,1.3vw,16px)",lineHeight:1.8,marginBottom:"clamp(20px,3vh,38px)",maxWidth:"clamp(240px,32vw,420px)"}}>
-          From first hover to racing through gates at 120 km/h — SLU Drone Club is where university pilots level up, compete, and build real-world skills.
+          SLU Drone Club is where university pilots level up, compete, and build real-world skills. - Every Tuesday and Thursday 5:30 - 6:30
         </p>
         <div style={{...fade(0.4),display:"flex",gap:"clamp(8px,1vw,14px)",flexWrap:"wrap",marginBottom:"clamp(28px,5vh,56px)"}}>
           <button onClick={()=>setPage("challenges")} style={{padding:"clamp(9px,1.2vh,14px) clamp(14px,2vw,28px)",background:"#00e5ff",color:"#252540",border:"none",borderRadius:6,fontFamily:"monospace",fontWeight:700,fontSize:"clamp(8px,0.9vw,11px)",letterSpacing:2,cursor:"pointer",boxShadow:"0 0 22px #00e5ff55",transition:"all .2s",whiteSpace:"nowrap"}} onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"} onMouseLeave={e=>e.currentTarget.style.transform="none"}>VIEW CHALLENGES →</button>
