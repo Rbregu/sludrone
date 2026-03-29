@@ -845,7 +845,7 @@ export default function App() {
       {page==="members"    && <MembersPage/>}
       {page==="join"       && <JoinPage/>}
       <div style={{position:"fixed",bottom:0,left:0,right:0,zIndex:500,padding:"6px 20px",background:"rgba(37,37,64,0.85)",backdropFilter:"blur(8px)",borderTop:"1px solid rgba(255,255,255,0.04)",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:4}}>
-        <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}>created by <span style={{color:"#3a6a52"}}>ramadan bregu</span> · <a href="mailto:ramadanbregu7@gmail.com" style={{color:"#3a6a52",textDecoration:"none"}}>ramadanbregu7@gmail.com</a></span>
+        <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}><span style={{color:"#3a6a52"}}>ramadan bregu</span> · <a href="mailto:ramadanbregu7@gmail.com" style={{color:"#3a6a52",textDecoration:"none"}}>ramadanbregu7@gmail.com</a></span>
         <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}>vp president of pentest club · 2026</span>
       </div>
     </div>
