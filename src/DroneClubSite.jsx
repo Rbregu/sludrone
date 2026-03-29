@@ -55,14 +55,18 @@ const COMPONENTS = {
 };
 
 const MEMBERS = [
-  { name:"Alex Chen",    role:"Club President",     level:"Expert",       flights:1240, spec:"Freestyle",   avatar:"AC", color:"#00e5ff" },
-  { name:"Priya Sharma", role:"Safety Officer",     level:"Advanced",     flights:890,  spec:"Long Range",  avatar:"PS", color:"#a8ff3e" },
-  { name:"Jordan Lee",   role:"Tech Lead",          level:"Expert",       flights:2100, spec:"Racing",      avatar:"JL", color:"#ff6b35" },
-  { name:"Sam Rivera",   role:"Event Coordinator",  level:"Intermediate", flights:340,  spec:"Cinematics",  avatar:"SR", color:"#bf5fff" },
-  { name:"Mia Kowalski", role:"Training Lead",      level:"Advanced",     flights:670,  spec:"Freestyle",   avatar:"MK", color:"#ffcc00" },
-  { name:"Rahul Gupta",  role:"Member",             level:"Beginner",     flights:45,   spec:"Racing",      avatar:"RG", color:"#00e5ff" },
-  { name:"Chloe Martin", role:"Member",             level:"Intermediate", flights:210,  spec:"Cinematics",  avatar:"CM", color:"#a8ff3e" },
-  { name:"Tom Fischer",  role:"Member",             level:"Advanced",     flights:520,  spec:"Freestyle",   avatar:"TF", color:"#ff6b35" },
+  { name:"Trenton Martin",   role:"President",      level:"Advanced",     flights:25, spec:"Racing",      avatar:"TM", color:"#00e5ff" },
+  { name:"Quong Nguyen",     role:"Vice President", level:"Advanced",     flights:25, spec:"Freestyle",   avatar:"QN", color:"#a8ff3e" },
+  { name:"Joseph Stauffer",  role:"Secretary",      level:"Intermediate", flights:25, spec:"Cinematics",  avatar:"JS", color:"#ff6b35" },
+  { name:"Kiara Lantigua",   role:"Treasurer",      level:"Intermediate", flights:25, spec:"Racing",      avatar:"KL", color:"#bf5fff" },
+  { name:"Andrew Doorly",    role:"Media Manager",  level:"Intermediate", flights:25, spec:"Cinematics",  avatar:"AD", color:"#ffcc00" },
+  { name:"Ryan Kenny",       role:"Member",         level:"Beginner",     flights:25, spec:"Racing",      avatar:"RK", color:"#00e5ff" },
+  { name:"Sarah Ingram",     role:"Member",         level:"Beginner",     flights:25, spec:"Freestyle",   avatar:"SI", color:"#a8ff3e" },
+  { name:"Joshua Taylor",    role:"Member",         level:"Beginner",     flights:25, spec:"Racing",      avatar:"JT", color:"#ff6b35" },
+  { name:"Andrew Bhargava",  role:"Member",         level:"Beginner",     flights:25, spec:"Freestyle",   avatar:"AB", color:"#bf5fff" },
+  { name:"Duyen Nguyen",     role:"Member",         level:"Beginner",     flights:25, spec:"Cinematics",  avatar:"DN", color:"#ffcc00" },
+  { name:"Breylan Laguerre", role:"Member",         level:"Beginner",     flights:25, spec:"Racing",      avatar:"BL", color:"#00e5ff" },
+  { name:"Justin Bartz",     role:"Member",         level:"Beginner",     flights:25, spec:"Freestyle",   avatar:"JB", color:"#a8ff3e" },
 ];
 
 /* ─── maneuver keyframes (t: 0→1 once) ──────────────────────────────── */
@@ -588,7 +592,6 @@ function ChallengesPage() {
                     <span style={{fontSize:26,color:c.dc,textShadow:isAct?`0 0 14px ${c.dc}`:"none"}}>{c.icon}</span>
                     <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:3}}>
                       <span style={{fontSize:8,letterSpacing:2,color:c.dc,border:`1px solid ${c.dc}33`,borderRadius:3,padding:"2px 7px"}}>{c.diff.toUpperCase()}</span>
-                      <span style={{fontSize:9,color:"#a8ff3e"}}>★ {c.pts}</span>
                     </div>
                   </div>
                   <div style={{fontWeight:700,fontSize:13,color:"#fff",marginBottom:5,letterSpacing:0.5}}>{c.name}</div>
@@ -605,7 +608,6 @@ function ChallengesPage() {
                     </div>
                     <div style={{display:"flex",gap:12,marginTop:12,flexWrap:"wrap"}}>
                       <span style={{fontSize:9,color:"#667788"}}>⏱ {c.dur}</span>
-                      <span style={{fontSize:9,color:"#a8ff3e"}}>★ {c.pts} pts</span>
                       <span style={{fontSize:9,color:c.dc,border:`1px solid ${c.dc}33`,borderRadius:3,padding:"1px 7px",letterSpacing:1}}>{c.diff.toUpperCase()}</span>
                     </div>
                   </div>
@@ -653,10 +655,10 @@ function HomePage({setPage}) {
     <div style={{height:"100vh",position:"relative",overflow:"hidden",background:"#252540"}}>
       <HomeScene/>
       <div style={{position:"absolute",inset:0,background:"rgba(37,37,64,0.6)",pointerEvents:"none"}}/>
-      <div style={{position:"absolute",left:0,top:0,bottom:0,width:"clamp(280px,50%,600px)",display:"flex",flexDirection:"column",justifyContent:"center",padding:"0 clamp(20px,4vw,56px)"}}>
+      <div style={{position:"absolute",left:0,top:0,bottom:0,width:"clamp(280px,52%,600px)",display:"flex",flexDirection:"column",justifyContent:"center",padding:"0 clamp(20px,4vw,56px)"}}>
         <div style={{...fade(0.1),fontSize:"clamp(7px,1vw,11px)",letterSpacing:"clamp(2px,0.5vw,5px)",color:"#00e5ff",textTransform:"uppercase",marginBottom:"clamp(8px,1.5vh,18px)"}}>Saint Leo University Drone Club<br/>✦ Est. 2026</div>
         <h1 style={{...fade(0.2),fontFamily:"monospace",fontWeight:900,fontSize:"clamp(26px,5vw,72px)",lineHeight:1.05,color:"#fff",marginBottom:"clamp(12px,2vh,22px)",letterSpacing:-1}}>
-          Master The<br/><span style={{color:"#00e5ff",textShadow:"0 0 40px #00e5ff88"}}>Sky</span>
+          Master The<br/><span style={{color:"#00e5ff",textShadow:"0 0 40px #00e5ff88"}}>Sky.</span>
         </h1>
         <p style={{...fade(0.3),color:"#667788",fontSize:"clamp(11px,1.3vw,16px)",lineHeight:1.8,marginBottom:"clamp(20px,3vh,38px)",maxWidth:"clamp(240px,32vw,420px)"}}>
           From first hover to racing through gates at 120 km/h — SLU Drone Club is where university pilots level up, compete, and build real-world skills.
@@ -667,7 +669,7 @@ function HomePage({setPage}) {
           <button onClick={()=>setPage("join")} style={{padding:"clamp(9px,1.2vh,14px) clamp(14px,2vw,28px)",background:"none",color:"#667788",border:"1px solid rgba(255,255,255,0.08)",borderRadius:6,fontFamily:"monospace",fontWeight:700,fontSize:"clamp(8px,0.9vw,11px)",letterSpacing:2,cursor:"pointer",transition:"all .2s",whiteSpace:"nowrap"}} onMouseEnter={e=>e.currentTarget.style.color="#fff"} onMouseLeave={e=>e.currentTarget.style.color="#667788"}>JOIN THE CLUB</button>
         </div>
         <div style={{...fade(0.6),display:"flex",gap:"clamp(18px,3vw,40px)"}}>
-          {[["50+","Members"],["300+","Flights"],["8","Challenges"],["#1","Ranked"]].map(([n,l])=>(
+          {[["11","Members"],["25+","Flight Hours"],["8","Challenges"],["2x","Weekly"]].map(([n,l])=>(
             <div key={l}>
               <div style={{fontFamily:"monospace",fontWeight:900,fontSize:"clamp(18px,2.5vw,30px)",color:"#fff",textShadow:"0 0 20px #00e5ff44"}}>{n}</div>
               <div style={{fontSize:"clamp(7px,0.7vw,9px)",letterSpacing:3,color:"#445566",textTransform:"uppercase",marginTop:2}}>{l}</div>
@@ -715,7 +717,7 @@ function MembersPage() {
           ))}
         </div>
         <div style={{marginTop:52,display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(150px,1fr))",gap:1,background:"rgba(0,229,255,0.08)",border:"1px solid rgba(0,229,255,0.12)",borderRadius:12,overflow:"hidden"}}>
-          {[["50+","Total Members"],["4,200+","Combined Flights"],["3","Skill Levels"],["5","Disciplines"]].map(([n,l])=>(
+          {[["11","Total Members"],["25+","Flight Hours"],["2×","Weekly Sessions"],["5","Disciplines"]].map(([n,l])=>(
             <div key={l} style={{padding:"24px 18px",textAlign:"center",borderRight:"1px solid rgba(0,229,255,0.08)"}}>
               <div style={{fontWeight:900,fontSize:26,color:"#fff",marginBottom:5}}>{n}</div>
               <div style={{fontSize:8,letterSpacing:2,color:"#445566",textTransform:"uppercase"}}>{l}</div>
@@ -755,7 +757,7 @@ function JoinPage() {
         <h2 style={{fontWeight:900,fontSize:30,color:"#fff",marginBottom:14}}>Welcome to the <span style={{color:"#00e5ff"}}>Club!</span></h2>
         <p style={{color:"#667788",fontSize:13,lineHeight:1.8,marginBottom:28}}>We'll reach out to <span style={{color:"#00e5ff"}}>{form.email}</span> within 48 hours with next steps.</p>
         <div style={{background:"rgba(0,229,255,0.07)",border:"1px solid rgba(0,229,255,0.2)",borderRadius:10,padding:"18px 22px",fontSize:11,color:"#667788",lineHeight:2}}>
-          📅 First session: <span style={{color:"#fff"}}>Saturday 10:00 AM</span><br/>
+          📅 Sessions: <span style={{color:"#fff"}}>Tuesdays & Thursdays 5:30–6:30 PM</span><br/>
           📍 Location: <span style={{color:"#fff"}}>Field G, Campus North</span><br/>
           🎧 Discord: <span style={{color:"#00e5ff"}}>discord.gg/sludrone</span>
         </div>
@@ -782,17 +784,11 @@ function JoinPage() {
               </button>)}
             </div>
           </div>
-          <div style={{marginBottom:18}}>
-            <label style={{display:"block",fontSize:8,letterSpacing:3,color:"#445566",textTransform:"uppercase",marginBottom:9}}>Weekly Availability</label>
-            <div style={{display:"flex",gap:7,flexWrap:"wrap"}}>
-              {days.map(d=><button key={d} onClick={()=>toggle(d)} style={{background:form.availability.includes(d)?"#00e5ff":"rgba(255,255,255,0.65)",border:`1px solid ${form.availability.includes(d)?"#00e5ff":"rgba(255,255,255,0.08)"}`,borderRadius:6,padding:"7px 12px",color:form.availability.includes(d)?"#252540":"#667788",fontSize:10,fontWeight:form.availability.includes(d)?700:400,cursor:"pointer",fontFamily:"monospace",transition:"all .15s"}}>{d}</button>)}
-            </div>
-          </div>
           {inp("why","Why do you want to join? What are your goals?","text",true)}
           <button onClick={handleSubmit} style={{width:"100%",padding:"14px",background:"#00e5ff",color:"#252540",border:"none",borderRadius:7,fontFamily:"monospace",fontWeight:900,fontSize:12,letterSpacing:3,cursor:"pointer",boxShadow:"0 0 22px #00e5ff44",transition:"all .2s"}} onMouseEnter={e=>{e.currentTarget.style.boxShadow="0 0 38px #00e5ff88";e.currentTarget.style.transform="translateY(-1px)";}} onMouseLeave={e=>{e.currentTarget.style.boxShadow="0 0 22px #00e5ff44";e.currentTarget.style.transform="none";}}>SUBMIT APPLICATION →</button>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(170px,1fr))",gap:12,marginTop:28}}>
-          {[["🗓","Sessions","Saturdays 10AM–1PM, Field G"],["💸","Cost","£0 — student-union funded"],["🛠","Equipment","Club drones for beginners"],["📡","Training","Sim sessions Wed 6PM"]].map(([icon,title,desc])=>(
+          {[["🗓","Sessions","Tuesdays & Thursdays 5:30–6:30 PM"],["💸","Cost","Free — student funded"],["🛠","Equipment","Club drones provided"],["📡","Training","1 hr flight session twice a week"]].map(([icon,title,desc])=>(
             <div key={title} style={{background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.05)",borderRadius:9,padding:"14px 16px"}}>
               <div style={{fontSize:20,marginBottom:7}}>{icon}</div>
               <div style={{fontSize:10,fontWeight:700,color:"#fff",marginBottom:3}}>{title}</div>
@@ -849,7 +845,7 @@ export default function App() {
       {page==="members"    && <MembersPage/>}
       {page==="join"       && <JoinPage/>}
       <div style={{position:"fixed",bottom:0,left:0,right:0,zIndex:500,padding:"6px 20px",background:"rgba(37,37,64,0.85)",backdropFilter:"blur(8px)",borderTop:"1px solid rgba(255,255,255,0.04)",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:4}}>
-        <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}><span style={{color:"#3a6a52"}}>ramadan bregu</span> · <a href="mailto:ramadanbregu7@gmail.com" style={{color:"#3a6a52",textDecoration:"none"}}>ramadanbregu7@gmail.com</a></span>
+        <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}>created by <span style={{color:"#3a6a52"}}>ramadan bregu</span> · <a href="mailto:ramadanbregu7@gmail.com" style={{color:"#3a6a52",textDecoration:"none"}}>ramadanbregu7@gmail.com</a></span>
         <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}>vp president of pentest club · 2026</span>
       </div>
     </div>
