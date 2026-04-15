@@ -55,7 +55,8 @@ const COMPONENTS = {
 };
 
 const MEMBERS = [
-  { name:"Trenton Martin",   role:"President",      level:"Advanced",     flights:25, spec:"Racing",      avatar:"TM", color:"#00e5ff" },
+  { name:"Edward Santiago",  role:"Club Advisor",   level:"Expert",       flights:25, spec:"Aviation",    avatar:"ES", color:"#00e5ff" },
+  { name:"Trenton Martin",   role:"President",      level:"Advanced",     flights:25, spec:"Racing",      avatar:"TM", color:"#a8ff3e" },
   { name:"Quong Nguyen",     role:"Vice President", level:"Advanced",     flights:25, spec:"Freestyle",   avatar:"QN", color:"#a8ff3e" },
   { name:"Joseph Stauffer",  role:"Secretary",      level:"Intermediate", flights:25, spec:"Cinematics",  avatar:"JS", color:"#ff6b35" },
   { name:"Kiara Lantigua",   role:"Treasurer",      level:"Intermediate", flights:25, spec:"Racing",      avatar:"KL", color:"#bf5fff" },
@@ -658,10 +659,10 @@ function HomePage({setPage}) {
       <div style={{position:"absolute",left:0,top:0,bottom:0,width:"clamp(280px,52%,600px)",display:"flex",flexDirection:"column",justifyContent:"center",padding:"0 clamp(20px,4vw,56px)"}}>
         <div style={{...fade(0.1),fontSize:"clamp(7px,1vw,11px)",letterSpacing:"clamp(2px,0.5vw,5px)",color:"#00e5ff",textTransform:"uppercase",marginBottom:"clamp(8px,1.5vh,18px)"}}>Saint Leo University Drone Club<br/>✦ Est. 2026</div>
         <h1 style={{...fade(0.2),fontFamily:"monospace",fontWeight:900,fontSize:"clamp(26px,5vw,72px)",lineHeight:1.05,color:"#fff",marginBottom:"clamp(12px,2vh,22px)",letterSpacing:-1}}>
-          Master The<br/><span style={{color:"#00e5ff",textShadow:"0 0 40px #00e5ff88"}}>Sky</span>
+          Master The<br/><span style={{color:"#00e5ff",textShadow:"0 0 40px #00e5ff88"}}>Sky.</span>
         </h1>
         <p style={{...fade(0.3),color:"#667788",fontSize:"clamp(11px,1.3vw,16px)",lineHeight:1.8,marginBottom:"clamp(20px,3vh,38px)",maxWidth:"clamp(240px,32vw,420px)"}}>
-          SLU Drone Club is where university pilots level up, compete, and build real-world skills. - Every Tuesday and Thursday 5:30 - 6:30
+          From first hover to racing through gates at 120 km/h — SLU Drone Club is where university pilots level up, compete, and build real-world skills.
         </p>
         <div style={{...fade(0.4),display:"flex",gap:"clamp(8px,1vw,14px)",flexWrap:"wrap",marginBottom:"clamp(28px,5vh,56px)"}}>
           <button onClick={()=>setPage("challenges")} style={{padding:"clamp(9px,1.2vh,14px) clamp(14px,2vw,28px)",background:"#00e5ff",color:"#252540",border:"none",borderRadius:6,fontFamily:"monospace",fontWeight:700,fontSize:"clamp(8px,0.9vw,11px)",letterSpacing:2,cursor:"pointer",boxShadow:"0 0 22px #00e5ff55",transition:"all .2s",whiteSpace:"nowrap"}} onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"} onMouseLeave={e=>e.currentTarget.style.transform="none"}>VIEW CHALLENGES →</button>
@@ -669,7 +670,7 @@ function HomePage({setPage}) {
           <button onClick={()=>setPage("join")} style={{padding:"clamp(9px,1.2vh,14px) clamp(14px,2vw,28px)",background:"none",color:"#667788",border:"1px solid rgba(255,255,255,0.08)",borderRadius:6,fontFamily:"monospace",fontWeight:700,fontSize:"clamp(8px,0.9vw,11px)",letterSpacing:2,cursor:"pointer",transition:"all .2s",whiteSpace:"nowrap"}} onMouseEnter={e=>e.currentTarget.style.color="#fff"} onMouseLeave={e=>e.currentTarget.style.color="#667788"}>JOIN THE CLUB</button>
         </div>
         <div style={{...fade(0.6),display:"flex",gap:"clamp(18px,3vw,40px)"}}>
-          {[["11","Members"],["25+","Flight Hours"],["8","Challenges"],["2x","Weekly"]].map(([n,l])=>(
+          {[["12","Members"],["25+","Flight Hours"],["8","Challenges"],["2x","Weekly"]].map(([n,l])=>(
             <div key={l}>
               <div style={{fontFamily:"monospace",fontWeight:900,fontSize:"clamp(18px,2.5vw,30px)",color:"#fff",textShadow:"0 0 20px #00e5ff44"}}>{n}</div>
               <div style={{fontSize:"clamp(7px,0.7vw,9px)",letterSpacing:3,color:"#445566",textTransform:"uppercase",marginTop:2}}>{l}</div>
@@ -717,7 +718,7 @@ function MembersPage() {
           ))}
         </div>
         <div style={{marginTop:52,display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(150px,1fr))",gap:1,background:"rgba(0,229,255,0.08)",border:"1px solid rgba(0,229,255,0.12)",borderRadius:12,overflow:"hidden"}}>
-          {[["11","Total Members"],["25+","Flight Hours"],["2×","Weekly Sessions"],["5","Disciplines"]].map(([n,l])=>(
+          {[["12","Total Members"],["25+","Flight Hours"],["2×","Weekly Sessions"],["5","Disciplines"]].map(([n,l])=>(
             <div key={l} style={{padding:"24px 18px",textAlign:"center",borderRight:"1px solid rgba(0,229,255,0.08)"}}>
               <div style={{fontWeight:900,fontSize:26,color:"#fff",marginBottom:5}}>{n}</div>
               <div style={{fontSize:8,letterSpacing:2,color:"#445566",textTransform:"uppercase"}}>{l}</div>
@@ -845,7 +846,7 @@ export default function App() {
       {page==="members"    && <MembersPage/>}
       {page==="join"       && <JoinPage/>}
       <div style={{position:"fixed",bottom:0,left:0,right:0,zIndex:500,padding:"6px 20px",background:"rgba(37,37,64,0.85)",backdropFilter:"blur(8px)",borderTop:"1px solid rgba(255,255,255,0.04)",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:4}}>
-        <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}><span style={{color:"#3a6a52"}}>ramadan bregu</span> · <a href="mailto:ramadanbregu7@gmail.com" style={{color:"#3a6a52",textDecoration:"none"}}>ramadanbregu7@gmail.com</a></span>
+        <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}>created by <span style={{color:"#3a6a52"}}>ramadan bregu</span> · <a href="mailto:ramadanbregu7@gmail.com" style={{color:"#3a6a52",textDecoration:"none"}}>ramadanbregu7@gmail.com</a></span>
         <span style={{fontFamily:"monospace",fontSize:9,color:"#2a4a3a",letterSpacing:1}}>vp president of pentest club · 2026</span>
       </div>
     </div>
